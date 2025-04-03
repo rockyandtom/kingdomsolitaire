@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Solitaire - The Ultimate Card Strategy Game | Play Free Online</title>
+    <meta name="description" content="Play Kingdom Solitaire for free online - a captivating card strategy game that combines solitaire mechanics with kingdom building elements.">
+    <link rel="canonical" href="https://kingdomsolitaire.sbs">
+    <meta name="keywords" content="Kingdom Solitaire, card game, online game, strategy game, free game, solitaire">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071e3',
+                            darkblue: '#0077ED',
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            black: '#1d1d1f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwind">
+        @layer base {
+            body {
+                @apply font-sans text-apple-black bg-white;
+            }
+            h1 {
+                @apply text-4xl md:text-5xl font-bold mb-4;
+            }
+            h2 {
+                @apply text-2xl md:text-3xl font-semibold mb-3 mt-8;
+            }
+            p {
+                @apply mb-4 text-base md:text-lg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-apple-gray py-4">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-apple-blue">Kingdom Solitaire</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#how-to-play" class="hover:text-apple-blue transition">How to Play</a>
+                    <a href="#features" class="hover:text-apple-blue transition">Features</a>
+                    <a href="#about" class="hover:text-apple-blue transition">About</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-apple-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div id="mobile-menu" class="md:hidden hidden mt-4 bg-white rounded-lg shadow-md p-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#how-to-play" class="hover:text-apple-blue transition">How to Play</a>
+                    <a href="#features" class="hover:text-apple-blue transition">Features</a>
+                    <a href="#about" class="hover:text-apple-blue transition">About</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12 text-center main-section">
+            <h1 class="text-gradient">Kingdom Solitaire</h1>
+            <p class="text-xl md:text-2xl mb-8">Build your kingdom one card at a time in this strategic solitaire adventure!</p>
+            
+            <div class="max-w-4xl mx-auto bg-apple-gray rounded-xl shadow-md overflow-hidden mb-8 game-iframe-container">
+                <div class="aspect-w-16 aspect-h-9 w-full">
+                    <iframe src="https://www.crazygames.com/embed/kingdom-solitaire" 
+                            frameborder="0" 
+                            class="w-full h-[500px] md:h-[600px]" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <a href="#how-to-play" class="custom-button mt-4 inline-block">Learn How to Play</a>
+        </section>
+
+        <section id="how-to-play" class="mb-12 main-section">
+            <h2 class="text-apple-blue">How to Play</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p>Kingdom Solitaire combines classic solitaire mechanics with kingdom-building strategy. Your goal is to clear the board while collecting resources and building your medieval kingdom.</p>
+                    <p>Here's how to get started:</p>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li class="mb-2">Match cards that are one value higher or lower than your currently selected card</li>
+                        <li class="mb-2">Collect special cards to gain resources for your kingdom</li>
+                        <li class="mb-2">Use strategic planning to clear difficult board layouts</li>
+                        <li class="mb-2">Progress through increasingly challenging levels</li>
+                    </ul>
+                </div>
+                <div class="bg-apple-gray p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-3">Game Controls</h3>
+                    <ul class="space-y-2">
+                        <li><span class="font-medium">Mouse/Touch:</span> Click or tap on cards to select and match them</li>
+                        <li><span class="font-medium">Undo:</span> Use the undo button to reverse your last move</li>
+                        <li><span class="font-medium">Hints:</span> Click the hint button if you're stuck</li>
+                        <li><span class="font-medium">Menu:</span> Access settings and game options</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="mb-12 main-section">
+            <h2 class="text-apple-blue">Game Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card">
+                    <svg class="w-12 h-12 text-apple-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Multiple Levels</h3>
+                    <p>Progress through dozens of challenging levels with unique layouts and objectives.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card">
+                    <svg class="w-12 h-12 text-apple-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Kingdom Building</h3>
+                    <p>Collect resources and build your medieval kingdom as you progress through the game.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card">
+                    <svg class="w-12 h-12 text-apple-blue mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Power-ups</h3>
+                    <p>Discover and use special power-up cards to overcome challenging situations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-12 main-section">
+            <h2 class="text-apple-blue">About Kingdom Solitaire</h2>
+            <p>Kingdom Solitaire is a unique card game that combines the familiar mechanics of solitaire with strategic kingdom-building elements. Set in a medieval fantasy world, players must match cards strategically while collecting resources to construct and expand their kingdom.</p>
+            <p>Unlike traditional solitaire games, Kingdom Solitaire introduces special cards, power-ups, and obstacles that create a deeper and more engaging gameplay experience. Each level presents new challenges and opportunities to advance your kingdom.</p>
+            <p>Whether you're a solitaire enthusiast or new to card games, Kingdom Solitaire offers accessible gameplay with increasing depth and strategy as you progress. The game features beautiful artwork, satisfying sound effects, and smooth animations that make every card match rewarding.</p>
+        </section>
+    </main>
+
+    <footer class="bg-apple-black text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Kingdom Solitaire</h3>
+                    <p class="text-apple-darkgray">Build your kingdom one card at a time!</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-3">Navigation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-apple-darkgray hover:text-white transition">Home</a></li>
+                            <li><a href="#how-to-play" class="text-apple-darkgray hover:text-white transition">How to Play</a></li>
+                            <li><a href="#features" class="text-apple-darkgray hover:text-white transition">Features</a></li>
+                            <li><a href="#about" class="text-apple-darkgray hover:text-white transition">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-3">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-apple-darkgray hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-apple-darkgray hover:text-white transition">Terms of Service</a></li>
+                            <li><a href="#" class="text-apple-darkgray hover:text-white transition">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-apple-darkgray">
+                <p>&copy; 2023 Kingdom Solitaire. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add animation to sections when they come into view
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.main-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 0.8s ease-in-out forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html> 
